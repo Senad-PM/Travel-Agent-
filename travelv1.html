@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExploreNow - Travel Agency</title>
+  <link rel="stylesheet" href="stylesv1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+  <!-- Navigation -->
+  <div class="main">
+    <nav class="navbar">
+      <div class="logo">ExploreNow<span class="blinker">...</span></div>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#Booking">Booking</a></li>
+        <li><a href="#newsletter">Contact Us</a></li>
+      </ul>
+      <div class="log" id="user-icon"><i class="fa-solid fa-user"></i></div>
+      
+      <!-- Login Form Container -->
+      <div class="login-popup" id="login-popup">
+        <form class="form">
+          <div class="form-header">
+            <p class="form-title">Sign in to your account</p>
+            <p class="form-subtitle">Welcome back, adventurer!</p>
+          </div>
+          
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input id="email" placeholder="Enter email" type="email">
+            <span class="input-icon">✉️</span>
+          </div>
+          
+          <div class="input-container">
+            <label for="password">Password</label>
+            <input id="password" placeholder="Enter password" type="password">
+            <span class="password-toggle" id="password-toggle">
+              <i class="fa-solid fa-eye-slash"></i>
+            </span>
+          </div>
+          
+          <div class="remember-forgot">
+            <div class="remember">
+              <input type="checkbox" id="remember-me">
+              <label for="remember-me">Remember me</label>
+            </div>
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
+          
+          <button class="submit" type="submit">
+            Sign in
+          </button>
+          
+          <p class="signup-link">
+            No account? <a href="">Sign up</a> for exclusive travel deals
+          </p>
+        </form>
+      </div>
+    </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Your Travel Story Starts Here</h1>
+      <p>Find The Best Destinations And Tour Packages Tailored Just For You</p>
+      <div class="search-bar">
+        <input type="text" placeholder="Search destinations..." />
+        <button class="animated-button">Search</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+  <!-- Featured Destinations -->
+  <section id="destinations" class="section">
+    <h2>Featured Destinations</h2>
+    <div class="destinations">
+      <div class="destination">
+        <div class="destination-container">
+          <img src="Images/Arugam Bay Beach Srilanka.jpg" alt="Arugam Bay Beach" />
+          <div class="popup-info">
+            Arugam Bay Beach in Sri Lanka is renowned for surfing, pristine coastline, and a laid-back atmosphere amidst natural beauty.
+        </div>
+        </div>
+        <h3>Arugam Bay Beach</h3>
+      </div>
+      <div class="destination">
+        <div class="destination-container">
+        <img src="Images/Sigiriya (Lion Rock) is a 1500-year-old rock fortress located in Sri Lanka.jpg" alt="Lion's Rock" />
+        <div class="popup-info">
+          Sigiriya, or Lion's Rock, is a UNESCO-listed ancient fortress in Sri Lanka, famous for its dramatic rock formation and historical significance.
+      </div>
+      </div>
+        <h3>Lion's Rock</h3>
+      </div>
+      <div class="destination">
+        <div class="destination-container">
+        <img src="Images/Nine Arches Bridge | Ella | Sri Lanka.jpg" alt="Ella" />
+        <div class="popup-info">
+          Ella is a hill town known for its scenic views, hiking trails, and the iconic Nine Arch Bridge.
+      </div>
+    </div>
+        <h3>Ella</h3>
+      </div>
+      <div class="destination">
+        <div class="destination-container">
+        <img src="Images/Adam's peak - Sri Pada.jpg" alt="Adam's Peak" />
+        <div class="popup-info">
+          Adam's Peak is a sacred mountain revered by multiple faiths for its footprint-shaped summit and challenging ascent.
+      </div>
+    </div>
+        <h3>Adam's Peak</h3>
+      </div>
+      <div class="destination">
+        <div class="destination-container">
+        <img src="Images/Dambulla cave temple also known as the Golden….jpg" alt="Dambulla Cave Temple" />
+        <div class="popup-info">
+          Dambulla Cave Temple is a historic site featuring ancient Buddhist murals and statues within five cave sanctuaries.
+      </div>
+    </div>
+        <h3>Dambulla Cave Temple</h3>
+      </div>
+      <div class="destination">
+        <div class="destination-container">
+        <img src="Images/Galle Fort.jpg" alt="Galle Fort" />
+        <div class="popup-info">
+          Galle is a colonial town with a fortified old city, offering historical charm and coastal beauty.
+        </div>
+    </div>
+        <h3>Galle Fort</h3>
+      </div>
+      <div class="destination">
+        <div class="destination-container">
+        <img src="Images/Unknown-2.jpg" alt="Yala National Park" />
+        <div class="popup-info">
+          Yala National Park is renowned for its diverse wildlife, including leopards and elephants, in a scenic coastal setting.
+      </div>
+    </div>
+        <h3>Yala National Park</h3>
+      </div>
+      <div class="destination">
+        <div class="destination-container">
+        <img src="Images/Unknown-3.jpg" alt="Hikkaduwa" />
+        <div class="popup-info">
+          Hikkaduwa Beach is a vibrant spot for surfers and beach lovers, known for its lively nightlife and coral reefs.
+      </div>
+    </div>
+        <h3>Hikkaduwa</h3>
+      </div>
+      <div class="destination">
+        <div class="destination-container">
+        <img src="Images/nuwaraeliya.jpg" alt="Nuwara Eliya" />
+        <div class="popup-info">
+          Nuwara Eliya is a cool hill station famous for its tea plantations, scenic landscapes, and colonial architecture.
+      </div>
+    </div>
+        <h3>Nuwara Eliya</h3>
+      </div>
+      <div class="destination">
+        <div class="destination-container">
+        <img src="Images/city.jpg" alt="Colombo" />
+        <div class="popup-info">
+          Colombo is Sri Lanka's capital, blending modern city life with historical landmarks and cultural attractions.
+      </div>
+    </div>
+        <h3>Colombo</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tour Packages -->
+  <section id="packages" class="section">
+    <h2>Tour Packages</h2>
+    <div class="packages">
+      <div class="package">
+        <h3>Relaxation Retreat</h3>
+        <p>1. Duration: 4 days/3 nights(759$ Per Person)</p>
+        <p>2. Highlights:</p>
+        <ul class="package1 centered-list">
+          <li>Daily spa treatments</li>
+          <li>Yoga and meditation sessions</li>
+          <li>Beach or poolside relaxation time</li>
+          <li>Sunset cruise</li>
+          <li>Optional wellness workshops</li>
+        </ul>
+        <p class ="package1 centered-list">Accommodations: Luxury resort with spa facilities</p>
+        <p class ="package1 centered-list">Includes: Breakfast and dinner daily, welcome drink, airport transfers, complimentary resort activities</p>
+      </div>
+      <div class="package">
+        <h3>Cultural Heritage Explorer</h3>
+        <p>1. Duration: 5 days/4 nights(899$ Per Person)</p>
+        <p>2. Highlights:</p>
+        <ul class="package1 centered-list">
+          <li>Guided tours of historical landmarks and museum</li>
+          <li>Traditional cooking class with local chef</li>
+          <li>Evening cultural performances</li>
+          <li>Visits to artisan workshops</li> 
+          <li>Immersive traditional cooking class featuring authentic regional recipes and techniques </li>      
+        </ul>
+        <p class ="package1 centered-list">Accommodations: Boutique hotels in historic districts</p>
+        <p class ="package1 centered-list">Includes: Daily breakfast, welcome and farewell dinners, transportation between sites, entrance fees</p>
+      </div>
+      <div class="package">
+        <h3>Adventure Seeker</h3>
+        <p>1. Duration: 7 days/6 nights(1099$ Per Person)</p>
+        <p>2. Highlights:</p>
+        <ul class="package1 centered-list">
+          <li>Hiking in national parks</li>
+          <li>White water rafting experience</li>
+          <li>Zip-lining adventure</li>
+          <li>Mountain biking on scenic trails</li>  
+          <li>Cave exploration</li>      
+        </ul>
+        <p class ="package1 centered-list">Accommodations: Eco-lodges and glamping sites</p>
+        <p class ="package1 centered-list">Includes: All meals, specialized equipment, expert guides, adventure insurance</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="Booking" class="book" style="width:100%;">
+    <h1 class = "heading" style="width:100%;"></h1>
+      <span>B</span>
+      <span>o</span>
+      <span>o</span>
+      <span>k</span>
+      <span class = "space"></span>
+      <span>N</span>
+      <span>o</span>
+      <span>w</span>
+      <form action="/submit-form" method="post" class = "row" style="width:100%;">
+        <label for="place">Place Name:</label><br>
+        <input type="text" id="place" name="place" required class="inputbox"><br><br>
+      
+        <label for="passengers">Passenger Count:</label><br>
+        <input type="number" id="passengers" name="passengers" min="1" max="6" required class="inputbox"><br><br>
+      
+        <label for="arrival">Arrival Date:</label><br>
+        <input type="datetime-local" id="arrival" name="arrival" required class="inputbox"><br><br>
+      
+        <label for="end">Tour End Date:</label><br>
+        <input type="date" id="end" name="end" required class="inputbox"><br><br>
+      
+        <button type="submit">Submit</button>
+      </form>
+  </section>
+
+  <footer id = "newsletter" class = "ft" style="width:100%;">
+    <div class = "col">
+        <h4>Contact us</h4>
+        <p><strong>Address : </strong>21 Hawlock Road Galle</p>
+        <p><strong>Phone : </strong>+94 401 4565</p>
+        <p><strong>Hours :    </strong> 24/7 Work Support</p>
+        <div class = "follow">
+            <h4>Follow</h4>
+        </div>
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+    </div>
+    <div class = "col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Destinations</a>
+        <a href="#">Packages</a>
+        <a href="#">Contact us</a>
+   </div>
+   <div class = "col">
+        <h4>My Account</h4>
+        <a href="#">Sign in</a>
+        <a href="#">Log in</a>
+        <a href="#">Dream Destinations</a>
+        <a href="#">Help</a>
+   </div>
+   <!--<div class ="insta">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class ="row1">
+            <i class="fa-brands fa-google-play"></i>
+            <i class="fa-brands fa-app-store-ios"></i>
+        </div>
+        <p>Secure Payment Gateway</p>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-apple-pay"></i>
+        <i class="fa-brands fa-cc-paypal"></i>
+        <i class="fa-brands fa-cc-amazon-pay"></i>
+   </div>-->
+   <div class = "copyright">
+    <p><i class="fa-regular fa-copyright"></i>All Rights recieved by Spectra</p>
+</div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Menu toggle functionality
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    if (toggleBtn && navLinks) {
+      toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      toggleBtn.classList.toggle('active');
+      });
+    }
+
+    // Intersection Observer for animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.6 });
+
+    document.querySelectorAll('.destination').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Login popup and password toggle functionality
+    const userIcon = document.getElementById('user-icon');
+    const loginPopup = document.getElementById('login-popup');
+    const passwordToggle = document.getElementById('password-toggle');
+    const passwordInput = document.getElementById('password');
+
+    // Toggle login form when user icon is clicked
+    if (userIcon && loginPopup) {
+      userIcon.addEventListener('click', function(event) {
+        loginPopup.classList.toggle('active');
+        event.stopPropagation();
+      });
+    }
+
+    // Password visibility toggle
+    if (passwordToggle && passwordInput) {
+      passwordToggle.addEventListener('click', function(event) {
+        // Stop the click event from bubbling up to the document
+        event.stopPropagation();
+        
+        if (passwordInput.type === 'password') {
+          // Change to text (password visible)
+          passwordInput.type = 'text';
+          passwordToggle.innerHTML = '<i class="fa-solid fa-eye">';
+        } else {
+          // Change back to password (password hidden)
+          passwordInput.type = 'password';
+          passwordToggle.innerHTML = '</i><i class="fa-solid fa-eye-slash"></i>';
+        }
+      });
+    }
+
+    // Close login form when clicking outside
+    document.addEventListener('click', function(event) {
+      if (loginPopup && userIcon && !loginPopup.contains(event.target) && !userIcon.contains(event.target)) {
+        loginPopup.classList.remove('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>
